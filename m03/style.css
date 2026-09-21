@@ -9,7 +9,9 @@ body {
 
 /* Level 1 */
 .kartu-flex {
-  display: flex
+  display: flex;
+  justify-content: center; /* Nomor 2 */
+  align-items: stretch; /* Nomor 3 */
 }
 
 .kartu {
@@ -19,29 +21,44 @@ body {
 }
 
 /* Level 2 */
+/* .kartu-flex {
+  justify-content: center;
+} */
 
 /* Level 3  */
+/* .kartu-flex {
+  align-items: stretch;
+} */
 
 /* Level 4 */
 .tata-letak {
+  display: flex
 }
 
 .sidebar {
   background-color: #f0f0f0;
   padding: 1rem;
+  flex-basis: 250px;
+  flex-grow: 0;
 }
 
 .konten {
   background-color: #ffffff;
   padding: 1rem;
+  flex-grow: 1;
 }
 
 /* Level 5 */
 .info-kontak {
+  display: flex;
+  flex-direction: column;
 }
 
 /* Level 6 */
 .kisi {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 1fr) minmax(1fr, 1fr); /* Level 9 */
+  gap: 1em; /* Level 7 */
 }
 
 .kartu-grid {
@@ -53,7 +70,11 @@ body {
 /* Level 7 */
 
 /* Level 8 */
+.unggulan {
+  grid-column: 1 / 3;
+}
 
 /* Level 9
 
    Level 10 */
+  
